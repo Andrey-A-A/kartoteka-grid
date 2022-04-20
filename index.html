@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kartoteka</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <input type="checkbox" id="nav-toggle" hidden>
+      <nav class="nav">
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <ul class="nav__main-menu">
+          <li><a href="#">Главная</a></li>
+          <!-- <li>
+            <a href="#">Константин<br>Константиновский</a>
+          </li> -->
+          <li>
+            <div>Константин<br>Константиновский</div>
+          </li>
+        </ul>
+        <ul class="nav__menu">
+          <li><a href="#">Мероприятия</a></li>
+          <li><a href="#">Сотрудники</a></li>
+          <li><a href="#">Заметки</a></li>
+          <li><a href="#">Статистика</a></li>
+          <li><a href="#">Удобрения</a></li>
+          <li><a href="#">Погода</a></li>
+          <li><a href="#">Организации</a></li>
+        </ul>
+      </nav>
+      <section class="sidebar">
+        <nav class="sidebar__nav">
+          <ul class="sidebar__nav-main-menu">
+            <li><a href="#">Главная</a></li>
+            <li>
+              <div>Константин<br> Константиновский</div>
+            </li>
+          </ul>
+          <ul class="sidebar__nav-menu">
+            <li><a href="#">Мероприятия</a></li>
+            <li><a href="#">Сотрудники</a></li>
+            <li><a href="#">Заметки</a></li>
+            <li><a href="#">Статистика</a></li>
+            <li><a href="#">Удобрения</a></li>
+            <li><a href="#">Погода</a></li>
+            <li><a href="#">Организации</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="content">
+        <div class="content__wrap">
+          <div class="content__header">
+            <div class="content__header-left">ИП Васильев</div>
+            <div class="content__header-right">
+              <div class="close"></div>
+              <img src="img/gear.svg" alt="">
+            </div>
+          </div>
+
+          <div class="content__main">
+            <div class="content__item item-1">
+              <h2 class="content__title">Работа с полями</h2>
+              <img src="img/field.svg" alt="Работа с полями">
+            </div>
+            <div class="content__item item-2">
+              <h2 class="content__title">Статистика урожая</h2>
+              <p>Поволжье</p>
+              <img src="img/map.svg" alt="Статистика урожая">
+            </div>
+            <div class="content__item item-3">
+              <h2 class="content__title">Погода в Курской области</h2>
+              <div class="content__weather">
+                <div class="content__weather-row1">
+                  <div class="content__weather-date">28.08.2020<br>Среда</div>
+                  <div class="content__weather-temperature">+28</div>
+                  <div class="content__weater-sup">&#8451;</div>
+                </div>
+                <div class="content__weather-row2">
+                  <p>750 мм рт. ст.</p>
+                  <p>Солнечно</p>
+                  <p>3,5 м/с</p>
+                  <p>Осадки 7%</p>
+                </div>
+              </div>
+            </div>
+            <div class="content__item item-4">
+              <h2 class="content__title">Отчёты и статистика</h2>
+              <div class="content__repot-wrap">
+                <div class="content__repot-table">
+                  <div class="content__report-item item1">2020 год</div>
+                  <div class="content__report-item item2">2019 год</div>
+                  <div class="content__report-item item3">2018 год</div>
+                  <div class="content__report-item item4">123 000 000</div>
+                  <div class="content__report-item item5">90 568 667</div>
+                  <div class="content__report-item item6">200 568 667</div>
+                  <div class="content__report-item item7">123 587 569</div>
+                  <div class="content__report-item item8">123 587 569</div>
+                  <div class="content__report-item item9">123 587 569</div>
+                  <div class="content__report-item item10">258 654 588</div>
+                  <div class="content__report-item item11">258 654 588</div>
+                  <div class="content__report-item item12">258 654 588 </div>
+                </div>
+              </div>
+
+              <img src="img/chart.svg" alt="Отчёты и статистика">
+            </div>
+            <div class="content__item item-5">
+              <h2 class="content__title">Сотрудники</h2>
+              <div class="content__stuff">
+                <div class="content__stuff-item item1">
+                  <p>Иванов Иван Иванович<br><span>Заместитель</span></p>
+                </div>
+                <div class="content__stuff-item item2">
+                  <img src="img/telephone.svg" alt="телефон">
+                </div>
+                <div class="content__stuff-item item3">
+                  <img src="img/mail.svg" alt="почта">
+                </div>
+                <div class="content__stuff-item item4">
+                  <p>Константинов Иван Иванович<br><span>Секретарь</span></p>
+                </div>
+                <div class="content__stuff-item item5"><img src="img/telephone.svg" alt="телефон"></div>
+                <div class="content__stuff-item item6"><img src="img/mail.svg" alt="почта"></div>
+              </div>
+              <a href="#">Показать еще</a>
+            </div>
+            <div class="content__item item-6">
+              <h2 class="content__title">Статистика пшена на полях ЦАО</h2>
+              <div class="select">По годам <svg width="17" height="9" viewBox="0 0 17 9" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.865222 0.498883C1.1074 0.254716 1.50166 0.253103 1.74582 0.49528L8.92971 7.62063C9.17387 7.8628 9.17549 8.25706 8.93331 8.50123C8.69113 8.7454 8.29687 8.74701 8.05271 8.50483L0.868824 1.37949C0.624658 1.13731 0.623045 0.743049 0.865222 0.498883Z"
+                    fill="#43E8FF" />
+                  <path
+                    d="M16.162 0.498883C15.9198 0.254716 15.5256 0.253103 15.2814 0.49528L8.09752 7.62063C7.85335 7.8628 7.85174 8.25706 8.09392 8.50123C8.33609 8.7454 8.73035 8.74701 8.97452 8.50483L16.1584 1.37949C16.4026 1.13731 16.4042 0.743049 16.162 0.498883Z"
+                    fill="#43E8FF" />
+                </svg>
+              </div>
+              <div class="item-6__cont-1">
+                <h3>Урожай 2020</h3>
+                <p>15 150 000 тонн</p>
+                <p>120 областей</p>
+              </div>
+              <div class="item-6__cont-2">
+                <h3>Урожай 2019</h3>
+                <p>102 650 980 тонн</p>
+                <p>250 областей</p>
+              </div>
+              <img src="img/piechart.svg" alt="круговая диарамма">
+            </div>
+            <div class="content__item item-7">
+              <h2 class="content__title">Арендуемая техника
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.2356 5.86455L10.6244 5.16017L8.55751 0.757671C8.40313 0.428921 7.86376 0.428921 7.70938 0.757671L5.64313 5.16017L1.03189 5.86455C0.653135 5.92267 0.501885 6.3833 0.76751 6.65517L4.11751 10.0889L3.32564 14.9433C3.26251 15.3289 3.67438 15.6183 4.01501 15.4289L8.13376 13.1527L12.2525 15.4295C12.59 15.617 13.0056 15.3333 12.9419 14.9439L12.15 10.0895L15.5 6.6558C15.7656 6.3833 15.6138 5.92267 15.2356 5.86455Z"
+                    fill="#43E8FF" />
+                </svg>
+              </h2>
+              <p class="content__subtitle">ООО “Магнат Мед”</p>
+              <div class="item-7__cont-1">
+                <h3>Экскаваторы 2020</h3>
+                <p>15 100 машин</p>
+                <p>130 областей</p>
+                <p>5 предприятий</p>
+              </div>
+              <a href="#">Добавить технику</a>
+              <img src="img/frame16.svg" alt="Добавить технику">
+              <img class="linev1" src="img/line-v.svg" alt="">
+              <img class="linev2" src="img/line-v.svg" alt="">
+              <img class="linev3" src="img/line-v.svg" alt="">
+              <img class="lineg" src="img/line-g.svg" alt="">
+            </div>
+          </div>
+          <div class="timer">
+            <p class="timer__time">00:00:00</p>
+          </div>
+        </div>
+    </div>
+    </section>
+  </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

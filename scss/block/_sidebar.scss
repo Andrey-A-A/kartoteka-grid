@@ -1,0 +1,80 @@
+.sidebar {
+  flex-basis: 16.74%;
+  background: #1F2339;
+  height: 99.5rem;
+  font-size: 1.4rem;
+}
+
+.sidebar__nav {
+  padding: 3.1rem 0 0 1.9rem;
+}
+
+.sidebar__nav-main-menu {
+  padding-bottom: 5.9rem;
+}
+
+.sidebar__nav-main-menu li {
+  padding-bottom: 2.5rem;
+}
+
+.sidebar__nav-menu li {
+  padding-bottom: 3.0rem;
+}
+
+.sidebar__nav-main-menu li:nth-child(1) {
+  @include menu("../img/house.svg", 1.738rem, 1.8rem, 0 1.039rem 0 0);
+}
+
+.sidebar__nav-main-menu li:nth-child(2) {
+  @include menu("../img/man.svg", 1.7rem, 1.7rem, 1.0rem 1.039rem 10px 0);
+}
+
+.sidebar__nav-menu li:nth-child(1) {
+  @include menu("../img/bag.svg", 1.7rem, 1.9rem, 0 1.039rem 0 0);
+}
+
+.sidebar__nav-menu li:nth-child(2) {
+  @include menu("../img/staff.svg", 2.2rem, 1.4rem, 0 1.039rem 0 0);
+}
+
+.sidebar__nav-menu li:nth-child(3) {
+  @include menu("../img/notes.svg", 2.0rem, 1.9rem, 0 1.039rem 0 0);
+}
+
+.sidebar__nav-menu li:nth-child(4) {
+  @include menu("../img/stats.svg", 1.9rem, 1.9rem, 0 1.039rem 0 0);
+}
+
+.sidebar__nav-menu li:nth-child(5) {
+  @include menu("../img/dung.svg", 1.7rem, 2.0rem, 0 1.039rem 0 0);
+}
+
+.sidebar__nav-menu li:nth-child(6) {
+  @include menu("../img/weather.svg", 2.0rem, 2.0rem, 0 1.039rem 0 0);
+}
+
+.sidebar__nav-menu li:nth-child(7) {
+  @include menu("../img/agency.svg", 2.2rem, 1.7rem, 0 1.039rem 0 0);
+}
+
+// .sidebar > ul > li > a {
+//   color: $white;
+// }
+a {
+    color: $white;
+}
+
+a:hover,
+a:focus {
+  color: #23273A;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: #43E8FF;
+  padding: 1em 1.5em;
+}
+
+@media (max-width: 1199.98px){
+  .sidebar {
+      display: none;
+  }
+}

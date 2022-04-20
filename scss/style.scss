@@ -1,0 +1,8 @@
+@import "fonts"; //подключаем файл стилей шрифтов
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "base-style";
+@import "block/nav";
+@import "block/sidebar";
+@import "block/content";
