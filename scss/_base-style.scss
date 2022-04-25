@@ -7,14 +7,16 @@ html, body {
 	font-style: normal;
 	//font-size: 14px;
 	font-size: 62.5%;
+	//font-size: calc(1em + 1vw);
 	font-weight: 400;
 	line-height: 19.07px;
 	color: $white;
 }
 
 body {
-	overflow-y: hidden;
-	overflow-x: hidden;
+	//overflow-y: hidden;
+	//overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 .container {
@@ -25,7 +27,8 @@ body {
 .wrapper {
 	@include min-max(320px, 1440px, 0px);
 	//height: 100vh;
-	height: 99.5rem;
+	//height: 99.5rem;
+	max-height: 999999px;
 }
 
 h2 {
@@ -37,8 +40,9 @@ h2 {
 
 h3 {
 	font-weight: 700;
-	font-size: 14px;
-	line-height: 19px;
+	font-size: 1.4rem;
+	//line-height: 19px;
+	line-height: 1.36;
 }
 
 p {
@@ -61,3 +65,9 @@ a {
 		display: flex;
 	}
 }
+
+// @media (max-width: 991.98px) {
+// 	html, body {
+// 		font-size: 50.5%;
+// 	}
+// }
