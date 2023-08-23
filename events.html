@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kartoteka</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <input type="checkbox" id="nav-toggle" hidden>
+      <nav class="nav">
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <ul class="nav__main-menu">
+          <li><a href="/index.html">Главная</a></li>
+          <li>
+            <div>Константин<br>Константиновский</div>
+          </li>
+        </ul>
+        <ul class="nav__menu">
+          <li><a href="#">Мероприятия</a></li>
+          <li><a href="#">Сотрудники</a></li>
+          <li><a href="#">Заметки</a></li>
+          <li><a href="#">Статистика</a></li>
+          <li><a href="#">Удобрения</a></li>
+          <li><a href="#">Погода</a></li>
+          <li><a href="#">Организации</a></li>
+        </ul>
+      </nav>
+      <section class="sidebar">
+        <nav class="sidebar__nav">
+          <ul class="sidebar__nav-main-menu">
+            <li><a href="/index.html">Главная</a></li>
+            <li>
+              <div>Константин<br> Константиновский</div>
+            </li>
+          </ul>
+          <ul class="sidebar__nav-menu">
+            <li><a href="/events.html">Мероприятия</a></li>
+            <li><a href="#">Сотрудники</a></li>
+            <li><a href="#">Заметки</a></li>
+            <li><a href="#">Статистика</a></li>
+            <li><a href="#">Удобрения</a></li>
+            <li><a href="#">Погода</a></li>
+            <li><a href="#">Организации</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="content">
+        <div class="content__wrap">
+          <div class="content__header">
+            <div class="content__header-left">
+              <h1>Карточка мероприятия</h1>
+              <p>Обновлено</p>
+            </div>
+            <div class="content__header-right">
+              <a href="#">Материалы проверки</a>
+              <div class="close"></div>
+              <img src="img/gear.svg" alt="">
+            </div>
+          </div>
+
+          <div class="events__content">
+            <div class="event__content-left">
+              <h3 class="event__content-header">Структура предприятия</h3>
+              <div class="event__content-item">
+                <div class="line"></div>
+                <h3 class="item">ФГБУН Институт нанотехнологий микроэлектроники РАН</h3>
+                <p>Идёт процесс ликвидации с 25.10.2019 по 10.10.2020</p>
+                <p>Директор: Сауров Александр Николаевич</p>
+                <p>Трудовой контракт с 25.03.2017 по 25.03.2023</p>
+                <p>119991, Москва, Ленинский просп., 32а</p>
+                <p>123 сотрудника</p>
+                <div class="event__content-hiding">
+                  <h3 class="hiding">Наименование организации до реорганизации</h3>
+                  <p>ФГБУН науки Объединенный институт высоких температур РАН</p>
+                  <p>ФГБУН Институт проблем управления сложными системами РАН</p>
+                  <img src="./img/folder.svg" alt="папка">
+                </div>
+              </div>
+              <div class="event__content-item event__content-item-active">
+                <div class="line"></div>
+                <h3 class="item item-active">ФГБУН Институт нанотехнологий микроэлектроники РАН</h3>
+                <p>Идёт процесс ликвидации с 25.10.2019 по 10.10.2020</p>
+                <p>Директор: Сауров Александр Николаевич</p>
+                <p>Трудовой контракт с 25.03.2017 по 25.03.2023</p>
+                <p>119991, Москва, Ленинский просп., 32а</p>
+                <p>123 сотрудника</p>
+                <div class="event__content-hiding">
+                  <h3 class="hiding">Наименование организации до реорганизации</h3>
+                  <p>ФГБУН науки Объединенный институт высоких температур РАН</p>
+                  <p>ФГБУН Институт проблем управления сложными системами РАН</p>
+                  <img src="./img/folder.svg" alt="папка">
+                </div>
+              </div>
+              <div class="event__content-item">
+                <div class="line"></div>
+                <h3 class="item">ФГБУН Институт нанотехнологий микроэлектроники РАН</h3>
+                <p>Идёт процесс ликвидации с 25.10.2019 по 10.10.2020</p>
+                <p>Директор: Сауров Александр Николаевич</p>
+                <p>Трудовой контракт с 25.03.2017 по 25.03.2023</p>
+                <p>119991, Москва, Ленинский просп., 32а</p>
+                <p>123 сотрудника</p>
+                <div class="event__content-hiding">
+                  <h3 class="hiding">Наименование организации до реорганизации</h3>
+                  <p>ФГБУН науки Объединенный институт высоких температур РАН</p>
+                  <p>ФГБУН Институт проблем управления сложными системами РАН</p>
+                  <img src="./img/folder.svg" alt="папка">
+                </div>
+              </div>
+            </div>
+            <div class="event__content-right">
+              <div class="event__right-1">
+                <div class="event__right-row">
+                  <h3>Справка проверки</h3>
+                  <div class="linewhite"></div>
+                  <div class="button">Сформировать</div>
+                </div>
+                <div class="event__right-row">
+                  <h3>Акт проверки</h3>
+                  <div class="linewhite"></div>
+                  <div class="button">Сформировать</div>
+                </div>
+                <div class="event__right-row">
+                  <h3>Схема проверки</h3>
+                  <div class="linewhite"></div>
+                  <div class="button">Сформировать</div>
+                </div>
+              </div>
+              <div class="event__right-2">
+                <form action="">
+                  <div class="right2__textarea">
+                    <label for="text">Решение о проведении поверки</label>
+                    <textarea id="text" placeholder="Введите текст"></textarea>
+                    <div class="line"></div>
+                  </div>
+                  <div class="right2__form">
+                    <div class="right2__form-input">
+                      <label for="org">Организация</label>
+                      <input id="org" type="text" placeholder="ООО “РесерчХолд”">
+                    </div>
+                    <div class="right2__form-select">
+                      <label for="standard-select">Standard Select</label>
+                      <div class="select">
+                        <select id="standard-select">
+                          <option value="Option 1">Option 1</option>
+                          <option value="Option 2">Option 2</option>
+                          <option value="Option 3">Option 3</option>
+                          <option value="Option 4">Option 4</option>
+                          <option value="Option 5">Option 5</option>
+                          <option value="Option length">Option that has too long of a value to fit</option>
+                          <div class="d28"></div>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- <label for="control">Вид проверки</label>
+                    <select name="control" id="control">Плановая</select> -->
+                    <div class="d28"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="timer">
+            <p class="timer__time">00:00:00</p>
+          </div>
+        </div>
+    </div>
+    </section>
+  </div>
+  </div>
+  <script src="js/accordion.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+</body>
+
+</html>

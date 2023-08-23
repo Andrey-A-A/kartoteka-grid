@@ -66,6 +66,12 @@ a {
 	}
 }
 
+:root {
+  --select-border: #777;
+  --select-focus: #232735;
+  --select-arrow: var(--select-border);
+}
+
 // @media (max-width: 991.98px) {
 // 	html, body {
 // 		font-size: 50.5%;

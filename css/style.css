@@ -61,6 +61,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   display: block;
 }
 
+/* Обнуление */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: text-top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
 /**
  * Основные стили
  **/
@@ -122,12 +156,18 @@ a {
     display: flex;
   }
 }
+:root {
+  --select-border: #777;
+  --select-focus: #232735;
+  --select-arrow: var(--select-border);
+}
+
 /**
  * Переключаемая боковая панель навигации
  * выдвигающаяся по клику слева
  */
 .nav {
-  /*  ширна произвольная, не стесняйтесь экспериментировать */
+  /*  ширина произвольная */
   width: 320px;
   min-width: 320px;
   /* фиксируем и выставляем высоту панели на максимум */
@@ -575,26 +615,48 @@ a:focus {
 
 .content__header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 8.8em 0;
+  align-items: center;
 }
 
 .content__header-left {
+  display: flex;
+  align-items: center;
   font-weight: 700;
+  padding-bottom: 2rem;
+}
+.content__header-left h1 {
   font-size: 2rem;
-  line-height: 2.724rem;
+  line-height: 1.35;
+  padding-right: 1.7rem;
+}
+.content__header-left p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.38;
+  color: #43E8FF;
 }
 
 .content__header-right {
   display: flex;
   align-items: center;
 }
-
-.close {
+.content__header-right a {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.38;
+  color: #23273A;
+  padding: 7px 30px;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+.content__header-right .close {
   width: 2.8rem;
   height: 2.8rem;
   background: linear-gradient(to bottom, transparent 45%, #fff 45%, #fff 55%, transparent 55%), linear-gradient(to right, transparent 45%, #fff 45%, #fff 55%, transparent 55%);
-  margin-right: 2.3rem;
+  margin: 0 2.3rem;
 }
 
 .content__main {
@@ -1099,6 +1161,16 @@ a:focus {
   }
 }
 @media (max-width: 767.98px) {
+  .content__header {
+    justify-content: center;
+  }
+  .content__header h1 {
+    font-size: 1.7rem;
+  }
+  .content__header .content__header-right a {
+    padding: 7px 18px;
+  }
+
   .item-1 {
     flex-basis: 100%;
   }
@@ -1142,4 +1214,269 @@ a:focus {
     float: left;
     margin: 0 2rem 0 0;
   }
+}
+.events__content {
+  display: flex;
+}
+.events__content .event__content-left {
+  flex-basis: 49%;
+  background: #383E57;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
+}
+.events__content .event__content-right {
+  flex-basis: 49%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.events__content .event__content-right .event__right-1 {
+  padding: 2rem 0;
+  background: #383E57;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
+}
+.events__content .event__content-right .event__right-row {
+  padding: 0.5rem 2.2rem 0.5rem 2.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.events__content .event__content-right .event__right-row h3 {
+  padding-right: 1rem;
+  white-space: nowrap;
+}
+.events__content .event__content-right .event__right-row .linewhite {
+  width: 100%;
+  height: 1.5px;
+  background: #fff;
+  align-self: flex-end;
+  margin-bottom: 0.9rem;
+}
+.events__content .event__content-right .event__right-row .button {
+  display: flex;
+  color: #43E8FF;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.38;
+  background-color: #23273A;
+  border-radius: 6px;
+  padding: 0.4rem 3rem 0.7rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  align-items: baseline;
+  margin-left: 1rem;
+}
+.events__content .event__content-right .event__right-2 {
+  padding: 2rem 0;
+  background: #383E57;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
+  flex-basis: 100%;
+  margin-top: 4%;
+}
+.events__content .event__content-right .event__right-2 input, .events__content .event__content-right .event__right-2 textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.right2__textarea {
+  position: relative;
+  padding: 2.5rem 3rem 3rem 3rem;
+  font-size: 1.4rem;
+  line-height: 1.36;
+}
+.right2__textarea label {
+  position: absolute;
+  top: -0.4rem;
+  left: 3rem;
+  font-weight: 400;
+}
+.right2__textarea textarea {
+  background: #3E4459;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.7rem 0 0 1rem;
+  resize: vertical;
+  margin-bottom: 3rem;
+}
+.right2__textarea textarea:focus {
+  outline: none !important;
+}
+
+.right2__form {
+  padding: 2.5rem 3rem 3rem 3rem;
+  font-size: 1.4rem;
+  line-height: 1.36;
+}
+.right2__form .right2__form-input {
+  position: relative;
+}
+.right2__form label {
+  position: absolute;
+  top: -2.4rem;
+  left: 0rem;
+  font-weight: 400;
+}
+.right2__form input {
+  background: #3E4459;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.7rem 0 0.6rem 1.1rem;
+  resize: vertical;
+  margin-bottom: 3rem;
+}
+.right2__form input:focus {
+  outline: none !important;
+}
+.right2__form .right2__form-select select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  color: #C4C4C4;
+  outline: none;
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #3E4459;
+  display: grid;
+  grid-template-areas: "select";
+  grid-area: select;
+}
+.right2__form .right2__form-select select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  grid-area: select;
+}
+.right2__form .right2__form-select select::-ms-expand {
+  display: none;
+}
+.right2__form .d28 {
+  height: 5px;
+  width: 60px;
+  margin: 6px;
+  position: relative;
+}
+.right2__form .d28:before,
+.right2__form .d28:after {
+  content: "";
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  background: #F45919;
+}
+.right2__form .d28:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+.right2__form .d28:after {
+  right: 0;
+  transform: skew(0deg, -30deg);
+}
+
+h3.event__content-header {
+  padding: 2.7rem 0 2.6rem 2rem;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #151E41;
+}
+
+.event__content-item .item {
+  padding: 2.5rem 0 0 2rem;
+}
+.event__content-item .item::after {
+  content: "";
+  display: inline-block;
+  background: url(../img/check.svg) no-repeat;
+  width: 1.3rem;
+  height: 0.69rem;
+  margin: 0 0 0 4.7rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.event__content-item .item-active::after {
+  background: url(../img/flip.svg) no-repeat;
+}
+.event__content-item p:nth-of-type(1) {
+  color: #FF8991;
+  padding-left: 2rem;
+}
+.event__content-item p:nth-of-type(2) {
+  padding: 2.1rem 0 0 2rem;
+}
+.event__content-item p:nth-of-type(3) {
+  padding-left: 2rem;
+}
+.event__content-item p:nth-of-type(4) {
+  padding: 2.1rem 0 0 2rem;
+}
+.event__content-item p:nth-of-type(4)::before {
+  content: "";
+  display: block;
+  background: url("../img/mark.svg") no-repeat;
+  width: 1.7rem;
+  height: 1.7rem;
+  float: left;
+  margin: 0 0.7rem 0 0;
+}
+.event__content-item p:nth-of-type(5) {
+  padding: 1.1rem 0 2.5rem 2rem;
+}
+.event__content-item p:nth-of-type(5)::before {
+  content: "";
+  display: block;
+  background: url("../img/human.svg") no-repeat;
+  width: 1.6rem;
+  height: 1.6rem;
+  float: left;
+  margin: 0 0.7rem 0 0;
+}
+.event__content-item .event__content-hiding {
+  transition: 3s;
+  position: relative;
+  padding-bottom: 2.6rem;
+}
+.event__content-item .event__content-hiding .hiding {
+  padding: 0.7rem 0 0 2rem;
+}
+.event__content-item .event__content-hiding p {
+  color: #A1A6BE;
+  padding: 0.7rem 0 0 2rem;
+}
+.event__content-item .event__content-hiding p::before {
+  content: "";
+  display: block;
+  background: url("../img/signature.svg") no-repeat;
+  width: 1.6rem;
+  height: 1.6rem;
+  float: left;
+  margin: 0 0.7rem 0 0;
+}
+.event__content-item .event__content-hiding img {
+  position: absolute;
+  left: 91.7%;
+  top: -15.8rem;
 }
